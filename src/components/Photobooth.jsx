@@ -1,3 +1,4 @@
+// DinafyBooth v1.0.1 - Updated Filters and Parity Fix
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Camera, Download, RotateCcw, Heart, Sparkles, Layout, Palette, Loader2, AlertCircle, Star, Smile, Flower2, Cloud, Moon, Cat, Ghost, Sticker, Accessibility } from 'lucide-react';
