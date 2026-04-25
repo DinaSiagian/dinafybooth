@@ -462,6 +462,7 @@ const Photobooth = ({ onBack, onSave }) => {
   const [cameraLoading, setCameraLoading] = useState(false);
   const [cameraError, setCameraError] = useState(null);
   const [activeTab, setActiveTab] = useState('filters');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
@@ -772,11 +773,18 @@ const Photobooth = ({ onBack, onSave }) => {
   };
 
   return (
-    <section className="section-padding booth-view gradient-bg" style={{ minHeight: '100vh', paddingTop: '120px' }}>
+    <section className="section-padding booth-view gradient-bg" style={{ minHeight: '100vh' }}>
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Aesthetic Photobooth</h2>
           <p className="section-subtitle">Capture your natural self with smooth aesthetic themes.</p>
+          <button 
+            className="mobile-sidebar-toggle"
+            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+            aria-label="Toggle Customization"
+          >
+            {isSidebarOpen ? 'Close Menu' : 'Customize & Filters'}
+          </button>
         </div>
 
         <div className="booth-container">
@@ -788,7 +796,7 @@ const Photobooth = ({ onBack, onSave }) => {
               <div className="camera-viewport" style={{
                 aspectRatio: activeLayout.ratio,
                 height: activeLayout.ratio.startsWith('9') ? '650px' : 'auto',
-                width: activeLayout.ratio.startsWith('9') ? '365px' : '100%',
+                width: activeLayout.ratio.startsWith('9') ? 'min(365px, 100%)' : '100%',
                 margin: '0 auto',
                 display: 'block',
                 position: 'relative'
@@ -920,7 +928,8 @@ const Photobooth = ({ onBack, onSave }) => {
             </div>
           </div>
 
-          <div className="booth-sidebar glass-dark">
+          <div className={`booth-sidebar glass-dark ${isSidebarOpen ? 'open' : ''}`}>
+            <button className="sidebar-close-mobile" onClick={() => setIsSidebarOpen(false)}>×</button>
             <div className="sidebar-header-tabs">
               <button className={`side-tab ${activeTab === 'filters' ? 'active' : ''}`} onClick={() => setActiveTab('filters')}>
                 <Sparkles size={18} /> Filters

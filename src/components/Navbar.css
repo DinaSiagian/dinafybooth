@@ -74,4 +74,21 @@
   .navbar-links {
     display: none;
   }
+  
+  .navbar-logo .logo {
+    font-size: 1.2rem !important;
+  }
+  
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .navbar-container {
+    padding: 0 16px;
+  }
+  
+  .navbar.scrolled {
+    height: 60px;
+  }
 }
