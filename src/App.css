@@ -1,0 +1,20 @@
+/* App-wide styles */
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--soft-pink);
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Layout transition wrapper */
+.view-container {
+  width: 100%;
+}
+
+.booth-view {
+  background: white;
+}

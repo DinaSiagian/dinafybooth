@@ -1,0 +1,126 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 120px;
+  overflow: hidden;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 10;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent-pink);
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 32px;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.text-accent {
+  color: var(--accent-pink);
+  font-style: italic;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto 48px;
+}
+
+.hero-mockup {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.mockup-frame {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: var(--white);
+  padding: 16px;
+  border-radius: 40px;
+  box-shadow: var(--shadow-float);
+  border: 8px solid #fce4ec;
+}
+
+.mockup-screen {
+  width: 100%;
+  height: 100%;
+  background: #fdf2f8;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.mockup-overlay {
+  font-family: var(--font-accent);
+  color: #f48fb1;
+  font-size: 1.2rem;
+}
+
+.mockup-decor .sticker {
+  position: absolute;
+  font-size: 2rem;
+  z-index: 5;
+}
+
+.sticker-1 { top: -20px; left: -20px; transform: rotate(-15deg); }
+.sticker-2 { bottom: -10px; right: -20px; transform: rotate(10deg); }
+
+.hero-blobs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.blob {
+  position: absolute;
+  filter: blur(80px);
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.blob-1 {
+  width: 500px;
+  height: 500px;
+  background: var(--primary-pink);
+  top: -100px;
+  right: -100px;
+}
+
+.blob-2 {
+  width: 400px;
+  height: 400px;
+  background: var(--lavender);
+  bottom: -50px;
+  left: -50px;
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 3rem; }
+  .hero-subtitle { font-size: 1.1rem; }
+  .mockup-frame { width: 280px; height: 380px; }
+}

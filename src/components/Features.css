@@ -1,0 +1,53 @@
+.section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+}
+
+.feature-card {
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  background: var(--soft-pink);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-pink);
+  margin: 0 auto 24px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  font-family: var(--font-main);
+  font-weight: 600;
+}
+
+.feature-description {
+  color: var(--text-light);
+  font-size: 1rem;
+}
