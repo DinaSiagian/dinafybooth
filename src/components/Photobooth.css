@@ -46,7 +46,7 @@
   padding-bottom: 70px;
   background: white;
   border-radius: 24px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   overflow: hidden;
   width: 100%;
@@ -71,7 +71,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   font-style: italic;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0, 0, 0, 0.6);
   letter-spacing: 0.5px;
 }
 
@@ -83,7 +83,7 @@
 /* 1. Scrapbook Diary */
 .theme-scrapbook {
   background-color: #fdf6e3 !important;
-  background-image: 
+  background-image:
     radial-gradient(#d3c6aa 0.5px, transparent 0.5px),
     linear-gradient(#fdf6e3 0%, #f9f2e0 100%) !important;
   background-size: 20px 20px, 100% 100% !important;
@@ -92,10 +92,10 @@
 /* 2. Soft Gingham */
 .theme-gingham {
   background-color: #ffffff !important;
-  background-image: 
-    linear-gradient(45deg, #fce4ec 25%, transparent 25%), 
-    linear-gradient(-45deg, #fce4ec 25%, transparent 25%), 
-    linear-gradient(45deg, transparent 75%, #fce4ec 75%), 
+  background-image:
+    linear-gradient(45deg, #fce4ec 25%, transparent 25%),
+    linear-gradient(-45deg, #fce4ec 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #fce4ec 75%),
     linear-gradient(-45deg, transparent 75%, #fce4ec 75%) !important;
   background-size: 20px 20px !important;
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px !important;
@@ -104,10 +104,10 @@
 /* 3. Denim Style */
 .theme-denim {
   background: #3b5998 !important;
-  background-image: 
-    repeating-linear-gradient(45deg, rgba(0,0,0,0.1) 0px, rgba(0,0,0,0.1) 1px, transparent 1px, transparent 2px),
+  background-image:
+    repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 2px),
     linear-gradient(to bottom, #3b5998, #2a437c) !important;
-  border: 4px dashed rgba(255,255,255,0.2) !important;
+  border: 4px dashed rgba(255, 255, 255, 0.2) !important;
 }
 
 /* 4. Vintage Paper */
@@ -145,7 +145,7 @@
 /* 9. Bubble Pop */
 .theme-bubble {
   background: #e0f7fa !important;
-  background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.4) 0%, transparent 40%) !important;
+  background-image: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.4) 0%, transparent 40%) !important;
 }
 
 /* 10. Sticker Bomb */
@@ -164,12 +164,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgba(0,0,0,0.05);
+  border: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 .mini-sticker {
   font-size: 24px;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .theme-dark-mocha {
@@ -209,17 +209,51 @@
   align-content: stretch;
 }
 
-.grid-1 { grid-template-columns: 1fr; }
-.grid-2 { grid-template-columns: repeat(2, 1fr); }
-.grid-3 { grid-template-columns: repeat(3, 1fr); }
-.grid-4 { grid-template-columns: repeat(4, 1fr); }
-.grid-6 { grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); }
+.grid-1 {
+  grid-template-columns: 1fr;
+}
 
-.vgrid-1 { grid-template-columns: 1fr; grid-template-rows: 1fr; }
-.vgrid-2 { grid-template-columns: 1fr; grid-template-rows: repeat(2, 1fr); }
-.vgrid-3 { grid-template-columns: 1fr; grid-template-rows: repeat(3, 1fr); }
-.vgrid-4 { grid-template-columns: 1fr; grid-template-rows: repeat(4, 1fr); }
-.vgrid-6 { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 1fr); }
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-6 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.vgrid-1 {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.vgrid-2 {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.vgrid-3 {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.vgrid-4 {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.vgrid-6 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
 
 .grid-item {
   width: 100% !important;
@@ -280,31 +314,34 @@
 
 .sticker-item[data-type="bubble"] {
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.1) 40%, rgba(255,255,255,0.5) 100%);
-  box-shadow: inset -5px -5px 15px rgba(255,255,255,0.3), 5px 5px 15px rgba(0,0,0,0.05);
-  border: 1px solid rgba(255,255,255,0.4);
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0.5) 100%);
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.3), 5px 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(1px);
-  z-index: 100; /* Bubbles go on top of photos */
+  z-index: 100;
+  /* Bubbles go on top of photos */
 }
 
 .sticker-item[data-type="tape"] {
   opacity: 0.8;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
-  border: 1px solid rgba(255,255,255,0.3);
-  background-image: radial-gradient(rgba(255,255,255,0.3) 1px, transparent 1px);
-  background-size: 8px 8px; /* Dotted washi tape */
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+  background-size: 8px 8px;
+  /* Dotted washi tape */
 }
 
 .sticker-item[data-type="tape"].gingham {
-  background-image: linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.2) 75%, rgba(255,255,255,0.2)),
-                    linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.2) 75%, rgba(255,255,255,0.2));
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2)),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2));
   background-size: 10px 10px;
   background-position: 0 0, 5px 5px;
 }
 
 .sticker-item[data-type="paper"] {
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
-  clip-path: polygon(2% 0%, 98% 2%, 100% 98%, 0% 100%, 3% 50%); /* Torn paper effect */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  clip-path: polygon(2% 0%, 98% 2%, 100% 98%, 0% 100%, 3% 50%);
+  /* Torn paper effect */
 }
 
 .sticker-item[data-type="sparkle"] {
@@ -316,8 +353,15 @@
 }
 
 @keyframes sparkle-pulse {
-  from { opacity: 0.5; transform: translate(-50%, -50%) scale(0.8); }
-  to { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+  from {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
 }
 
 /* Decorations */
@@ -341,15 +385,15 @@
 }
 
 .filter-vintage {
-  filter: sepia(0.6) contrast(1.1) brightness(0.95) saturate(0.85);
+  filter: sepia(0.6) contrast(0.9) brightness(1.15) saturate(0.85);
 }
 
 .filter-cool {
-  filter: hue-rotate(180deg) saturate(0.9) brightness(1.1);
+  filter: hue-rotate(180deg) saturate(0.7) brightness(1.2) contrast(1.05);
 }
 
 .filter-bw {
-  filter: grayscale(100%);
+  filter: grayscale(100%) contrast(1) brightness(1.7);
 }
 
 .filter-sepia {
@@ -357,19 +401,19 @@
 }
 
 .filter-bright {
-  filter: brightness(1.4);
+  filter: brightness(1.6);
 }
 
 .filter-contrast {
-  filter: contrast(1.6);
+  filter: brightness(1.6) contrast(1.2);
 }
 
 .filter-glow {
-  filter: brightness(1.2) saturate(1.3) blur(0.4px);
+  filter: brightness(1.8) saturate(1.35) blur(0.4px);
 }
 
 .filter-blur {
-  filter: blur(3px);
+  filter: brightness(1.8) blur(1px);
 }
 
 .filter-pastel {
@@ -381,15 +425,35 @@
 }
 
 .filter-envy {
-  filter: contrast(1.2) brightness(1.1) sepia(0.3) hue-rotate(80deg) saturate(1.4);
+  filter: hue-rotate(80deg) saturate(0.8) brightness(1.1) contrast(0.95);
 }
 
 .filter-zinc {
-  filter: grayscale(0.8) contrast(1.4) brightness(1.1) sepia(0.2) hue-rotate(-20deg);
+  filter: saturate(0.6) brightness(1.25) contrast(0.95) hue-rotate(170deg);
 }
 
 .filter-lomo {
   filter: saturate(1.8) contrast(1.4) brightness(1.1) sepia(0.1) hue-rotate(-5deg);
+}
+
+.filter-dark-bw {
+  filter: grayscale(100%) contrast(1) brightness(1.2);
+}
+
+.filter-lomo-bright {
+  filter: saturate(1.8) contrast(1.3) brightness(1.5) sepia(0.1);
+}
+
+.filter-dazz {
+  filter: contrast(1.1) brightness(1.6) saturate(1.3) sepia(0.3) hue-rotate(-10deg) blur(0.7px);
+}
+
+.filter-smooth {
+  filter: brightness(1.8) contrast(0.95) saturate(1.05) blur(0.6px);
+}
+
+.filter-rosy {
+  filter: saturate(1.4) hue-rotate(-8deg) brightness(1.5) contrast(1.1);
 }
 
 /* Sidebar */
@@ -523,7 +587,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(0,0,0,0.05);
+  background: rgba(0, 0, 0, 0.05);
   border: none;
   font-size: 24px;
   align-items: center;
@@ -593,7 +657,7 @@
     border-radius: 12px;
     width: 100%;
     max-width: 100%;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     margin: 0 auto;
     position: relative;
   }
@@ -617,7 +681,7 @@
     border-radius: 30px 30px 0 0 !important;
     transform: translateY(100%);
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 -10px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.1);
     padding: 40px 20px 20px !important;
     display: flex !important;
     flex-direction: column !important;
@@ -636,12 +700,15 @@
     width: 100%;
     flex-wrap: nowrap !important;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
   }
 
   .sidebar-header-tabs::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+    display: none;
+    /* Hide scrollbar for Chrome, Safari and Opera */
   }
 
   .side-tab {

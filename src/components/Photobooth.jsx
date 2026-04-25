@@ -63,6 +63,11 @@ const filters = [
   { name: 'Envy', class: 'filter-envy' },
   { name: 'Zinc', class: 'filter-zinc' },
   { name: 'Lomo Quad', class: 'filter-lomo' },
+  { name: 'Dark B&W', class: 'filter-dark-bw' },
+  { name: 'Lomo Bright', class: 'filter-lomo-bright' },
+  { name: 'Dazz Cam', class: 'filter-dazz' },
+  { name: 'Smooth Beauty', class: 'filter-smooth' },
+  { name: 'Rosy Lips', class: 'filter-rosy' }
 ];
 
 const layouts = [
@@ -96,7 +101,7 @@ const themes = [
 
 const aestheticStickerPacks = [
   { id: 'none', name: 'None', items: [], bg: 'transparent', cssClass: '' },
-  { 
+  {
     id: 'scrapbook',
     name: 'Scrapbook Vintage',
     bg: '#fdf6e3',
@@ -109,14 +114,13 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🥨', x: 5, y: 50, size: 35, rotate: 20 },
       { type: 'emoji', emoji: '🎨', x: 95, y: 50, size: 40, rotate: -5 },
       { type: 'emoji', emoji: '🧵', x: 50, y: 5, size: 30 },
-      { type: 'emoji', emoji: '🖋️', x: 50, y: 95, size: 35 },
       { type: 'bubble', x: 15, y: 15, w: 50, h: 50 },
       { type: 'bubble', x: 85, y: 85, w: 60, h: 60 },
       { type: 'sparkle', x: 20, y: 80, emoji: '✨' },
       { type: 'sparkle', x: 80, y: 20, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'gingham',
     name: 'Gingham Garden',
     bg: '#ffffff',
@@ -128,14 +132,13 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🍀', x: 95, y: 85, size: 45, rotate: 15 },
       { type: 'emoji', emoji: '🌸', x: 92, y: 12, size: 35, rotate: 15 },
       { type: 'emoji', emoji: '🍒', x: 12, y: 92, size: 30, rotate: -10 },
-      { type: 'emoji', emoji: '🌷', x: 50, y: 95, size: 35 },
       { type: 'emoji', emoji: '🦋', x: 85, y: 25, size: 30, rotate: 20 },
       { type: 'bubble', x: 15, y: 30, w: 60, h: 60 },
       { type: 'bubble', x: 85, y: 70, w: 80, h: 80 },
       { type: 'sparkle', x: 50, y: 10, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'bubble-dream',
     name: 'Bubble Dream',
     bg: '#e1f5fe',
@@ -150,12 +153,11 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🫧', x: 20, y: 20, size: 40 },
       { type: 'emoji', emoji: '🫧', x: 80, y: 80, size: 45 },
       { type: 'emoji', emoji: '☁️', x: 50, y: 5, size: 50 },
-      { type: 'emoji', emoji: '✨', x: 50, y: 95, size: 30 },
       { type: 'sparkle', x: 15, y: 15, emoji: '✨' },
       { type: 'sparkle', x: 85, y: 85, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'vintage-letter',
     name: 'Vintage Letter',
     bg: '#e6d5b8',
@@ -168,12 +170,11 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🖋️', x: 50, y: 5, size: 40, rotate: 45 },
       { type: 'emoji', emoji: '🕯️', x: 5, y: 50, size: 40 },
       { type: 'emoji', emoji: '🗝️', x: 95, y: 50, size: 35 },
-      { type: 'emoji', emoji: '📜', x: 50, y: 95, size: 40 },
       { type: 'bubble', x: 20, y: 20, w: 40, h: 40 },
       { type: 'sparkle', x: 80, y: 80, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'pink-ribbon',
     name: 'Pink Ribbon',
     bg: '#fff0f5',
@@ -188,11 +189,10 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🎀', x: 50, y: 5, size: 50 },
       { type: 'bubble', x: 20, y: 80, w: 70, h: 70 },
       { type: 'bubble', x: 80, y: 20, w: 60, h: 60 },
-      { type: 'sparkle', x: 50, y: 92, emoji: '✨' },
       { type: 'emoji', emoji: '🦢', x: 50, y: 15, size: 30 },
     ]
   },
-  { 
+  {
     id: 'floral-bloom',
     name: 'Floral Garden',
     bg: '#fdfcf0',
@@ -205,13 +205,12 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🦋', x: 5, y: 50, size: 40, rotate: 20 },
       { type: 'emoji', emoji: '🌿', x: 95, y: 45, size: 40, rotate: -90 },
       { type: 'emoji', emoji: '🍃', x: 50, y: 5, size: 35 },
-      { type: 'emoji', emoji: '🌹', x: 50, y: 95, size: 40 },
       { type: 'bubble', x: 15, y: 15, w: 50, h: 50 },
       { type: 'bubble', x: 85, y: 85, w: 50, h: 50 },
       { type: 'sparkle', x: 20, y: 80, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'minimal-line',
     name: 'Minimal Chic',
     bg: '#fafafa',
@@ -224,12 +223,11 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '☁️', x: 50, y: 5, size: 45 },
       { type: 'emoji', emoji: '🐚', x: 5, y: 50, size: 35 },
       { type: 'emoji', emoji: '🦢', x: 95, y: 50, size: 40 },
-      { type: 'emoji', emoji: '🕯️', x: 50, y: 95, size: 30 },
       { type: 'bubble', x: 15, y: 85, w: 60, h: 60 },
       { type: 'sparkle', x: 50, y: 15, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'abstract-pastel',
     name: 'Abstract Pastel',
     bg: '#f3e5f5',
@@ -242,12 +240,11 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🌈', x: 50, y: 5, size: 50 },
       { type: 'emoji', emoji: '🎨', x: 5, y: 50, size: 40 },
       { type: 'emoji', emoji: '✨', x: 95, y: 50, size: 35 },
-      { type: 'emoji', emoji: '🌸', x: 50, y: 95, size: 40 },
       { type: 'sparkle', x: 20, y: 20, emoji: '✨' },
       { type: 'sparkle', x: 80, y: 80, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'washi-tape',
     name: 'Washi Collage',
     bg: '#f5f5f5',
@@ -259,13 +256,12 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🪢', x: 90, y: 88, size: 50, rotate: 5 },
       { type: 'emoji', emoji: '📌', x: 12, y: 5, size: 30 },
       { type: 'emoji', emoji: '📌', x: 88, y: 10, size: 30 },
-      { type: 'emoji', emoji: '🎀', x: 50, y: 95, size: 40 },
       { type: 'emoji', emoji: '🧸', x: 5, y: 50, size: 40 },
       { type: 'bubble', x: 15, y: 15, w: 40, h: 40 },
       { type: 'sparkle', x: 85, y: 85, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'paper-cut',
     name: 'Paper Cut Art',
     bg: '#fff9c4',
@@ -276,13 +272,12 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '✂️', x: 50, y: 5, size: 45, rotate: 45 },
       { type: 'emoji', emoji: '🎨', x: 5, y: 45, size: 40 },
       { type: 'emoji', emoji: '🪁', x: 95, y: 50, size: 50 },
-      { type: 'emoji', emoji: '🧩', x: 50, y: 95, size: 35 },
       { type: 'emoji', emoji: '🌸', x: 10, y: 90, size: 40 },
       { type: 'bubble', x: 15, y: 15, w: 60, h: 60 },
       { type: 'sparkle', x: 85, y: 15, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'polaroid-stack',
     name: 'Layer Stack',
     bg: '#e0e0e0',
@@ -293,12 +288,11 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🎞️', x: 88, y: 12, size: 80, rotate: 15 },
       { type: 'emoji', emoji: '📷', x: 12, y: 88, size: 50 },
       { type: 'emoji', emoji: '📽️', x: 50, y: 5, size: 40 },
-      { type: 'emoji', emoji: '✨', x: 50, y: 95, size: 35 },
       { type: 'bubble', x: 15, y: 15, w: 70, h: 70 },
       { type: 'bubble', x: 85, y: 85, w: 80, h: 80 },
     ]
   },
-  { 
+  {
     id: 'doodle-sketch',
     name: 'Doodle Sketch',
     bg: '#ffffff',
@@ -312,10 +306,9 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🎨', x: 5, y: 50, size: 35 },
       { type: 'emoji', emoji: '✏️', x: 95, y: 50, size: 30 },
       { type: 'bubble', x: 15, y: 15, w: 40, h: 40 },
-      { type: 'sparkle', x: 50, y: 95, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'cloud-dream',
     name: 'Cloud Dream',
     bg: '#e1f5fe',
@@ -328,10 +321,9 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '✨', x: 50, y: 5, size: 40 },
       { type: 'emoji', emoji: '🌈', x: 5, y: 50, size: 45 },
       { type: 'bubble', x: 95, y: 50, w: 70, h: 70 },
-      { type: 'sparkle', x: 50, y: 95, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'bubble-gloss',
     name: 'Glossy Bubbles',
     bg: '#e0f7fa',
@@ -344,10 +336,9 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🫧', x: 50, y: 5, size: 40 },
       { type: 'emoji', emoji: '✨', x: 5, y: 50, size: 30 },
       { type: 'emoji', emoji: '🫧', x: 95, y: 50, size: 35 },
-      { type: 'sparkle', x: 50, y: 95, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'grid-chic',
     name: 'Grid Chic',
     bg: '#f5f5f5',
@@ -360,11 +351,10 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🕶️', x: 50, y: 5, size: 35 },
       { type: 'emoji', emoji: '🎧', x: 5, y: 50, size: 40 },
       { type: 'emoji', emoji: '🎮', x: 95, y: 50, size: 35 },
-      { type: 'emoji', emoji: '✨', x: 50, y: 95, size: 30 },
       { type: 'bubble', x: 15, y: 15, w: 50, h: 50 },
     ]
   },
-  { 
+  {
     id: 'retro-pop',
     name: 'Retro Pop',
     bg: '#ffccbc',
@@ -377,10 +367,9 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🍭', x: 50, y: 5, size: 40 },
       { type: 'emoji', emoji: '📻', x: 5, y: 50, size: 40 },
       { type: 'emoji', emoji: '🥤', x: 95, y: 50, size: 35 },
-      { type: 'sparkle', x: 50, y: 95, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'fabric-textile',
     name: 'Fabric Style',
     bg: '#d7ccc8',
@@ -393,11 +382,10 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🎀', x: 50, y: 5, size: 40 },
       { type: 'emoji', emoji: '🩰', x: 5, y: 50, size: 45 },
       { type: 'emoji', emoji: '🧵', x: 95, y: 50, size: 40 },
-      { type: 'emoji', emoji: '🧶', x: 50, y: 95, size: 45 },
       { type: 'bubble', x: 15, y: 15, w: 50, h: 50 },
     ]
   },
-  { 
+  {
     id: 'sticker-collage',
     name: 'Sticker Bomb',
     bg: '#f8bbd0',
@@ -411,17 +399,15 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🦋', x: 5, y: 50, size: 40 },
       { type: 'emoji', emoji: '🌸', x: 95, y: 50, size: 40 },
       { type: 'bubble', x: 15, y: 15, w: 60, h: 60 },
-      { type: 'sparkle', x: 50, y: 95, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'frame-border',
     name: 'Border Art',
     bg: '#ffffff',
     cssClass: 'theme-minimal',
     items: [
       { type: 'emoji', emoji: '✨', x: 50, y: 5, size: 40 },
-      { type: 'emoji', emoji: '✨', x: 50, y: 95, size: 40 },
       { type: 'emoji', emoji: '✨', x: 5, y: 50, size: 40 },
       { type: 'emoji', emoji: '✨', x: 95, y: 50, size: 40 },
       { type: 'emoji', emoji: '💎', x: 10, y: 10, size: 40 },
@@ -432,7 +418,7 @@ const aestheticStickerPacks = [
       { type: 'sparkle', x: 85, y: 85, emoji: '✨' },
     ]
   },
-  { 
+  {
     id: 'elegant-minimal',
     name: 'Elegant Minimal',
     bg: '#fafafa',
@@ -444,7 +430,21 @@ const aestheticStickerPacks = [
       { type: 'emoji', emoji: '🕯️', x: 5, y: 50, size: 30 },
       { type: 'emoji', emoji: '🦢', x: 95, y: 50, size: 35 },
       { type: 'bubble', x: 15, y: 85, w: 40, h: 40 },
-      { type: 'sparkle', x: 50, y: 95, emoji: '✨' },
+    ]
+  },
+  {
+    id: 'makeup-glow',
+    name: 'Makeup & Glow',
+    bg: '#fff5f7',
+    cssClass: 'theme-kawaii',
+    items: [
+      { type: 'emoji', emoji: '👄', x: 25, y: 25, size: 40 },
+      { type: 'emoji', emoji: '💄', x: 75, y: 25, size: 40 },
+      { type: 'emoji', emoji: '💋', x: 25, y: 75, size: 45 },
+      { type: 'emoji', emoji: '🌸', x: 75, y: 75, size: 50 },
+      { type: 'emoji', emoji: '💖', x: 10, y: 10, size: 30 },
+      { type: 'bubble', x: 15, y: 15, w: 40, h: 40 },
+      { type: 'sparkle', x: 85, y: 85, emoji: '✨' },
     ]
   },
 ];
@@ -562,14 +562,6 @@ const Photobooth = ({ onBack, onSave }) => {
           setTimeout(() => {
             setCountdown(selectedTimer || 3);
           }, 1500);
-        } else {
-          setIsAutoCapturing(false);
-          if (newImages.length === activeLayout.count && onSave) {
-            setTimeout(async () => {
-              const collageUrl = await downloadCollage('png', true);
-              if (collageUrl) onSave(collageUrl);
-            }, 800);
-          }
         }
         return newImages;
       });
@@ -588,38 +580,118 @@ const Photobooth = ({ onBack, onSave }) => {
     }
   }, [countdown]);
 
+  // Auto-save collage when all photos are captured (Ensures fresh state)
+  useEffect(() => {
+    if (capturedImages.length === activeLayout.count && capturedImages.length > 0 && isAutoCapturing) {
+      // Immediately stop capturing to prevent double-triggers
+      setIsAutoCapturing(false);
+      
+      const timer = setTimeout(async () => {
+        try {
+          const collageUrl = await downloadCollage('png', true);
+          if (collageUrl && onSave) {
+            onSave(collageUrl);
+          }
+        } catch (e) {
+          console.error("Auto-save failed", e);
+        }
+      }, 800);
+      return () => clearTimeout(timer);
+    }
+  }, [capturedImages.length, activeLayout.count, isAutoCapturing]);
+
   const downloadCollage = async (format = 'png', isAutoSave = false) => {
     if (capturedImages.length === 0) return null;
 
     const finalCanvas = document.createElement('canvas');
     const ctx = finalCanvas.getContext('2d');
 
-    // Dynamic Ratio Calculation
     const [ratioW, ratioH] = activeLayout.ratio.split('/').map(Number);
-    const baseSize = 1080;
-    const width = ratioW > ratioH ? baseSize * (ratioW / ratioH) : baseSize;
-    const height = ratioH > ratioW ? baseSize * (ratioH / ratioW) : baseSize;
+    const baseViewportSize = 1080;
+    
+    let viewportWidth, viewportHeight;
+    if (ratioW > ratioH) { // Landscape
+      viewportWidth = baseViewportSize;
+      viewportHeight = baseViewportSize * (ratioH / ratioW);
+    } else { // Portrait
+      viewportHeight = baseViewportSize;
+      viewportWidth = baseViewportSize * (ratioW / ratioH);
+    }
+    
+    const sidePadding = (viewportWidth / 768) * 16;
+    const bottomPadding = (viewportWidth / 768) * 70;
+    const gridGap = (viewportWidth / 768) * 4;
+    
+    const width = viewportWidth + (sidePadding * 2);
+    const height = viewportHeight + sidePadding + bottomPadding;
 
     finalCanvas.width = width;
     finalCanvas.height = height;
 
-    // Handle background (Solid or Gradient)
-    const bgColor = activeTheme.color || '#FFFFFF';
-    if (bgColor.startsWith('linear-gradient')) {
-      const gradient = ctx.createLinearGradient(0, 0, width, height);
-      // Fallback for gradient themes
-      gradient.addColorStop(0, '#1e1e2e');
-      gradient.addColorStop(1, '#3d2b56');
-      ctx.fillStyle = gradient;
-    } else {
-      ctx.fillStyle = bgColor;
-    }
+    // Add rounded corners to the whole collage (Match UI border-radius: 24px)
+    const cardRadius = 24 * (width / 800);
+    ctx.beginPath();
+    ctx.moveTo(cardRadius, 0);
+    ctx.lineTo(width - cardRadius, 0);
+    ctx.quadraticCurveTo(width, 0, width, cardRadius);
+    ctx.lineTo(width, height - cardRadius);
+    ctx.quadraticCurveTo(width, height, width - cardRadius, height);
+    ctx.lineTo(cardRadius, height);
+    ctx.quadraticCurveTo(0, height, 0, height - cardRadius);
+    ctx.lineTo(0, cardRadius);
+    ctx.quadraticCurveTo(0, 0, cardRadius, 0);
+    ctx.closePath();
+    ctx.clip();
+
+    // Handle background (Replicating UI patterns)
+    const bgColor = (activeStickerPack.bg && activeStickerPack.bg !== 'transparent') 
+                    ? activeStickerPack.bg 
+                    : (activeTheme.color || '#FFFFFF');
+    
+    ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, width, height);
 
-    const padding = 40;
-    const gridGap = 20;
-    const availableWidth = width - (padding * 2);
-    const availableHeight = height - (padding * 2);
+    // Apply specific patterns for frames to match UI exactly
+    const scaleFactorUI = viewportWidth / 768;
+    if (activeStickerPack.id === 'gingham') {
+      const gSize = 20 * scaleFactorUI;
+      const pCanvas = document.createElement('canvas');
+      pCanvas.width = gSize; pCanvas.height = gSize;
+      const pCtx = pCanvas.getContext('2d');
+      pCtx.fillStyle = '#fce4ec';
+      pCtx.globalAlpha = 0.5;
+      pCtx.fillRect(0, 0, gSize/2, gSize/2);
+      pCtx.fillRect(gSize/2, gSize/2, gSize/2, gSize/2);
+      const pattern = ctx.createPattern(pCanvas, 'repeat');
+      ctx.fillStyle = pattern;
+      ctx.fillRect(0, 0, width, height);
+      ctx.globalAlpha = 1.0;
+    } else if (activeStickerPack.id === 'scrapbook') {
+      const gSize = 20 * scaleFactorUI;
+      const pCanvas = document.createElement('canvas');
+      pCanvas.width = gSize; pCanvas.height = gSize;
+      const pCtx = pCanvas.getContext('2d');
+      pCtx.fillStyle = '#d3c6aa';
+      pCtx.globalAlpha = 0.2;
+      pCtx.beginPath(); pCtx.arc(gSize/2, gSize/2, 1 * scaleFactorUI, 0, Math.PI*2); pCtx.fill();
+      const pattern = ctx.createPattern(pCanvas, 'repeat');
+      ctx.fillStyle = pattern;
+      ctx.fillRect(0, 0, width, height);
+    } else if (activeStickerPack.id === 'kawaii') {
+      const gSize = 30 * scaleFactorUI;
+      const pCanvas = document.createElement('canvas');
+      pCanvas.width = gSize; pCanvas.height = gSize;
+      const pCtx = pCanvas.getContext('2d');
+      pCtx.fillStyle = '#ffb7c5';
+      pCtx.globalAlpha = 0.25;
+      pCtx.beginPath(); pCtx.arc(gSize/2, gSize/2, 3 * scaleFactorUI, 0, Math.PI*2); pCtx.fill();
+      const pattern = ctx.createPattern(pCanvas, 'repeat');
+      ctx.fillStyle = pattern;
+      ctx.fillRect(0, 0, width, height);
+    }
+
+    const availableWidth = viewportWidth;
+    const availableHeight = viewportHeight;
 
     let rows, cols;
     if (activeLayout.id.startsWith('vgrid')) {
@@ -637,36 +709,54 @@ const Photobooth = ({ onBack, onSave }) => {
 
     const loadImage = (src) => new Promise((resolve) => {
       const img = new Image();
+      // Only apply crossOrigin for external URLs to avoid issues with blobs/data strings
+      if (src && !src.startsWith('data:') && !src.startsWith('blob:')) {
+        img.crossOrigin = "anonymous";
+      }
       img.onload = () => resolve(img);
+      img.onerror = () => {
+        console.warn("Failed to load image for collage:", src);
+        resolve(null);
+      };
       img.src = src;
     });
 
     try {
-      const loadedImages = await Promise.all(capturedImages.map(loadImage));
+      const results = await Promise.all(capturedImages.map(loadImage));
+      const loadedImages = results.filter(img => img !== null);
+      
+      if (loadedImages.length === 0) {
+        alert("Maaf, foto tidak dapat diproses. Silakan coba lagi.");
+        return null;
+      }
 
       loadedImages.forEach((img, i) => {
         const row = Math.floor(i / cols);
         const col = i % cols;
-        const x = padding + col * (itemWidth + gridGap);
-        const y = padding + row * (itemHeight + gridGap);
+        const x = sidePadding + col * (itemWidth + gridGap);
+        const y = sidePadding + row * (itemHeight + gridGap);
 
         ctx.save();
 
-        // Filter Logic...
         if (activeFilter.class === 'filter-pink') ctx.filter = 'sepia(0.2) hue-rotate(320deg) saturate(1.5) brightness(1.1)';
-        else if (activeFilter.class === 'filter-vintage') ctx.filter = 'sepia(0.6) contrast(1.1) brightness(0.95) saturate(0.85)';
-        else if (activeFilter.class === 'filter-cool') ctx.filter = 'hue-rotate(180deg) saturate(0.9) brightness(1.1)';
-        else if (activeFilter.class === 'filter-bw') ctx.filter = 'grayscale(100%)';
+        else if (activeFilter.class === 'filter-vintage') ctx.filter = 'sepia(0.6) contrast(0.9) brightness(1.15) saturate(0.85)';
+        else if (activeFilter.class === 'filter-cool') ctx.filter = 'hue-rotate(180deg) saturate(0.7) brightness(1.2) contrast(1.05)';
+        else if (activeFilter.class === 'filter-bw') ctx.filter = 'grayscale(100%) contrast(1) brightness(1.7)';
         else if (activeFilter.class === 'filter-sepia') ctx.filter = 'sepia(100%)';
-        else if (activeFilter.class === 'filter-bright') ctx.filter = 'brightness(1.4)';
-        else if (activeFilter.class === 'filter-contrast') ctx.filter = 'contrast(1.6)';
-        else if (activeFilter.class === 'filter-glow') ctx.filter = 'brightness(1.2) saturate(1.3) blur(0.4px)';
-        else if (activeFilter.class === 'filter-blur') ctx.filter = 'blur(3px)';
+        else if (activeFilter.class === 'filter-bright') ctx.filter = 'brightness(1.6)';
+        else if (activeFilter.class === 'filter-contrast') ctx.filter = 'brightness(1.6) contrast(1.2)';
+        else if (activeFilter.class === 'filter-glow') ctx.filter = 'brightness(1.8) saturate(1.35) blur(0.4px)';
+        else if (activeFilter.class === 'filter-blur') ctx.filter = 'brightness(1.8) blur(1px)';
         else if (activeFilter.class === 'filter-pastel') ctx.filter = 'brightness(1.15) saturate(0.6) contrast(0.9)';
         else if (activeFilter.class === 'filter-golden') ctx.filter = 'sepia(0.4) saturate(1.6) brightness(1.1) hue-rotate(-15deg)';
-        else if (activeFilter.class === 'filter-envy') ctx.filter = 'contrast(1.2) brightness(1.1) sepia(0.3) hue-rotate(80deg) saturate(1.4)';
-        else if (activeFilter.class === 'filter-zinc') ctx.filter = 'grayscale(0.8) contrast(1.4) brightness(1.1) sepia(0.2) hue-rotate(-20deg)';
+        else if (activeFilter.class === 'filter-envy') ctx.filter = 'hue-rotate(80deg) saturate(0.8) brightness(1.1) contrast(0.95)';
+        else if (activeFilter.class === 'filter-zinc') ctx.filter = 'saturate(0.6) brightness(1.25) contrast(0.95) hue-rotate(170deg)';
         else if (activeFilter.class === 'filter-lomo') ctx.filter = 'saturate(1.8) contrast(1.4) brightness(1.1) sepia(0.1) hue-rotate(-5deg)';
+        else if (activeFilter.class === 'filter-dark-bw') ctx.filter = 'grayscale(100%) contrast(1) brightness(1.2)';
+        else if (activeFilter.class === 'filter-lomo-bright') ctx.filter = 'saturate(1.8) contrast(1.3) brightness(1.5) sepia(0.1)';
+        else if (activeFilter.class === 'filter-dazz') ctx.filter = 'contrast(1.1) brightness(1.6) saturate(1.3) sepia(0.3) hue-rotate(-10deg) blur(0.7px)';
+        else if (activeFilter.class === 'filter-smooth') ctx.filter = 'brightness(1.8) contrast(0.95) saturate(1.05) blur(0.6px)';
+        else if (activeFilter.class === 'filter-rosy') ctx.filter = 'saturate(1.4) hue-rotate(-8deg) brightness(1.5) contrast(1.1)';
 
         const imgRatio = img.width / img.height;
         const slotRatio = itemWidth / itemHeight;
@@ -689,12 +779,11 @@ const Photobooth = ({ onBack, onSave }) => {
         ctx.restore();
       });
 
-      // Draw Stickers
       activeStickerPack.items.forEach(item => {
         ctx.save();
         const stickerX = (item.x / 100) * width;
         const stickerY = (item.y / 100) * height;
-        const scaleFactor = (height > width ? height : width) / 1000;
+        const scaleFactor = width / 800;
         
         ctx.translate(stickerX, stickerY);
         ctx.rotate(((item.rotate || 0) * Math.PI) / 180);
@@ -740,12 +829,46 @@ const Photobooth = ({ onBack, onSave }) => {
         
         ctx.restore();
       });
-
-      // Draw branding logo at bottom (Consistent Dark Color)
-      ctx.fillStyle = 'rgba(0,0,0,0.6)';
-      ctx.font = "italic bold 32px 'Playfair Display', serif";
+      // Draw branding logo at bottom (Consistent with UI frame-decor)
+      const scaleFactor = width / 800;
+      const drawY = height - (15 * scaleFactor); // 15px from bottom in CSS
+      
+      ctx.save();
       ctx.textAlign = "center";
-      ctx.fillText("DinafyBooth", width / 2, height - 40);
+      ctx.textBaseline = "bottom";
+      ctx.fillStyle = 'rgba(0,0,0,0.6)';
+      
+      const logoFontSize = 22 * scaleFactor; // 1.4rem equivalent
+      const decorFontSize = 14 * scaleFactor; // 0.9rem equivalent
+      const gap = 15 * scaleFactor;
+      
+      const logoText = "DinafyBooth";
+      const decorLeft = "✨";
+      const decorRight = "💖";
+      
+      ctx.font = `italic bold ${logoFontSize}px 'Playfair Display', serif`;
+      const logoWidth = ctx.measureText(logoText).width;
+      ctx.font = `${decorFontSize}px Arial`;
+      const decorWidth = ctx.measureText(decorLeft).width;
+      
+      const totalWidth = decorWidth + gap + logoWidth + gap + decorWidth;
+      let currentX = (width - totalWidth) / 2;
+      
+      // Left Decor
+      ctx.font = `${decorFontSize}px Arial`;
+      ctx.fillText(decorLeft, currentX + decorWidth/2, drawY);
+      currentX += decorWidth + gap;
+      
+      // Logo
+      ctx.font = `italic bold ${logoFontSize}px 'Playfair Display', serif`;
+      ctx.fillText(logoText, currentX + logoWidth/2, drawY);
+      currentX += logoWidth + gap;
+      
+      // Right Decor
+      ctx.font = `${decorFontSize}px Arial`;
+      ctx.fillText(decorRight, currentX + decorWidth/2, drawY);
+      
+      ctx.restore();
 
       const mimeType = format === 'jpg' ? 'image/jpeg' : 'image/png';
       const extension = format === 'jpg' ? 'jpg' : 'png';
@@ -778,7 +901,7 @@ const Photobooth = ({ onBack, onSave }) => {
         <div className="section-header">
           <h2 className="section-title">Aesthetic Photobooth</h2>
           <p className="section-subtitle">Capture your natural self with smooth aesthetic themes.</p>
-          <button 
+          <button
             className="mobile-sidebar-toggle"
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             aria-label="Toggle Customization"
@@ -789,7 +912,7 @@ const Photobooth = ({ onBack, onSave }) => {
 
         <div className="booth-container">
           <div className="booth-main">
-            <div 
+            <div
               className={`camera-frame ${activeStickerPack.cssClass} ${activeTheme.type}`}
               style={{ background: activeStickerPack.bg !== 'transparent' ? activeStickerPack.bg : activeTheme.color }}
             >
